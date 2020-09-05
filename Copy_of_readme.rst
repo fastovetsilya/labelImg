@@ -1,5 +1,5 @@
-LabelImg for ellipse bounding boxes
-===================================
+LabelImg
+========
 
 .. image:: https://img.shields.io/pypi/v/labelimg.svg
         :target: https://pypi.python.org/pypi/labelimg
@@ -18,25 +18,11 @@ It is written in Python and uses Qt for its graphical interface.
 Annotations are saved as XML files in PASCAL VOC format, the format used
 by `ImageNet <http://www.image-net.org/>`__.  Besides, it also supports YOLO format
 
-What's new?
------------
-The `original release <https://github.com/tzutalin/labelImg>`__ of this image annotation tool supports only 
-rectangular bounding boxes. However, rectangular bounding boxes may not be suitable for some applications.
-In case of round objects, like tomatoes, circular bounding boxes `were shown <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7180616/>`__
-to produce better results. The present version of this software is designed to go further and allow for the ellipse bounding boxes. 
-In order to comply with the YOLO models, the inscribed ellipses are parameterized in terms of the corresponding rectangles. 
-To produce better results, this method may require a change in the Intersection over Union (IoU) computation. For the method of
-IoU computation for the circles, please refer to the article above. For the intersection of two ellipses, the computation of IoU
-may be more complex. However, the automatic tools are developed and available online, e.g. `here <https://github.com/chraibi/EEOver>`__.
-The current version of labeling tool does not support ellipse rotation.
-From the main menu, go to View -> Display Inscribed Ellipse to show all ellipses. 
-
-.. image:: https://github.com/fastovetsilya/labelImg/raw/master/demo/demo7.jpg
+.. image:: https://raw.githubusercontent.com/tzutalin/labelImg/master/demo/demo3.jpg
      :alt: Demo Image
 
-.. image:: https://github.com/fastovetsilya/labelImg/raw/master/demo/demo8.png
+.. image:: https://raw.githubusercontent.com/tzutalin/labelImg/master/demo/demo.jpg
      :alt: Demo Image
-
 
 `Watch a demo video <https://youtu.be/p0nR2YsCY_U>`__
 
