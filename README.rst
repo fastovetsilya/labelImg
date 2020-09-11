@@ -151,38 +151,6 @@ Open the Anaconda Prompt and go to the `labelImg <#labelimg>`__ directory
     python labelImg.py
     python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 
-Get from PyPI but only python3.0 or above
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is the simplest (one-command) install method on modern Linux distributions such as Ubuntu and Fedora.
-
-.. code:: shell
-
-    pip3 install labelImg
-    labelImg
-    labelImg [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
-
-
-Use Docker
-~~~~~~~~~~~~~~~~~
-.. code:: shell
-
-    docker run -it \
-    --user $(id -u) \
-    -e DISPLAY=unix$DISPLAY \
-    --workdir=$(pwd) \
-    --volume="/home/$USER:/home/$USER" \
-    --volume="/etc/group:/etc/group:ro" \
-    --volume="/etc/passwd:/etc/passwd:ro" \
-    --volume="/etc/shadow:/etc/shadow:ro" \
-    --volume="/etc/sudoers.d:/etc/sudoers.d:ro" \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
-    tzutalin/py2qt4
-
-    make qt4py2;./labelImg.py
-
-You can pull the image which has all of the installed and required dependencies. `Watch a demo video <https://youtu.be/nw1GexJzbCI>`__
-
-
 Usage
 -----
 
